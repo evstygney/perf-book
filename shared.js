@@ -61,13 +61,35 @@ window.PerfBookShared = (() => {
     return lines.join("\n");
   }
 
+  function chapterHref(label) {
+    if (label === "Вступление") {
+      return "./reader.html#introduction";
+    }
+
+    if (label === "Заключение") {
+      return "./reader.html#conclusion";
+    }
+
+    const match = label.match(/Глава\s+(\d+)/);
+    return match ? `./reader.html#chapter-${match[1]}` : null;
+  }
+
+  function routeMarkup(route) {
+    return `<ol>${route
+      .map((item) => {
+        const href = chapterHref(item);
+        return `<li>${href ? `<a href="${href}">${item}</a>` : item}</li>`;
+      })
+      .join("")}</ol>`;
+  }
+
   function buildScenarioCard(scenario) {
     return `
       <article class="path-card">
         <p class="section-label">${scenario.role}</p>
         <h4>${scenario.problem}</h4>
         <p>${scenario.summary}</p>
-        <ol>${scenario.route.map((item) => `<li>${item}</li>`).join("")}</ol>
+        ${routeMarkup(scenario.route)}
       </article>
     `;
   }
@@ -81,6 +103,8 @@ window.PerfBookShared = (() => {
     loadWorkbookState,
     workbookProgress,
     workbookExportText,
+    chapterHref,
+    routeMarkup,
     buildScenarioCard,
   };
 })();

@@ -1,5 +1,5 @@
 const { readingPaths, scenarios } = window.PerfBookData;
-const { copyText } = window.PerfBookShared;
+const { copyText, routeMarkup } = window.PerfBookShared;
 
 function initRoutesPage() {
   const pathsNode = document.getElementById("routes-reading-paths");
@@ -11,8 +11,9 @@ function initRoutesPage() {
         <article class="path-card">
           <h4>${path.title}</h4>
           <p>${path.text}</p>
-          <ol>${path.route.map((item) => `<li>${item}</li>`).join("")}</ol>
+          ${routeMarkup(path.route)}
           <div class="inline-actions">
+            <a class="button secondary small" href="./reader.html">Читать</a>
             <button class="button secondary small route-copy" data-index="${index}">Скопировать маршрут</button>
           </div>
         </article>
@@ -27,8 +28,9 @@ function initRoutesPage() {
           <p class="section-label">${scenario.role}</p>
           <h4>${scenario.problem}</h4>
           <p>${scenario.summary}</p>
-          <ol>${scenario.route.map((item) => `<li>${item}</li>`).join("")}</ol>
+          ${routeMarkup(scenario.route)}
           <div class="inline-actions">
+            <a class="button secondary small" href="./reader.html">Читать</a>
             <button class="button secondary small scenario-copy" data-index="${index}">Скопировать сценарий</button>
           </div>
         </article>

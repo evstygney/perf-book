@@ -1,3 +1,5 @@
+const { routeMarkup } = window.PerfBookShared;
+
 const chapterGroups = [
   {
     title: "Часть I. Как работает реклама",
@@ -48,7 +50,10 @@ document.getElementById("chapter-nav").innerHTML = chapterGroups
       <article class="path-card">
         <h4>${group.title}</h4>
         <p>${group.text}</p>
-        <ol>${group.route.map((item) => `<li>${item}</li>`).join("")}</ol>
+        ${routeMarkup(group.route)}
+        <div class="inline-actions">
+          <a class="button secondary small" href="./reader.html">Открыть в ридере</a>
+        </div>
       </article>
     `,
   )

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Читать книгу | Perf Book Lab</title>
+    <meta
+      name="description"
+      content="Онлайн-ридер книги «Перформанс-маркетинг для начинающих» с оглавлением и быстрым доступом к workbook, CAC-калькулятору и маршрутам."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">PB</span>
+            <div>
+              <p class="eyebrow">Perf Book Lab</p>
+              <h1>Читать книгу</h1>
+            </div>
+          </div>
+          <div class="topbar-links">
+            <a href="./index.html">Главная</a>
+            <a href="./book.html">Навигатор</a>
+            <a href="./workbook.html">Workbook</a>
+            <a href="./routes.html">Маршруты</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="kicker">Полный текст в системе</p>
+            <h2>Книга, рядом с которой уже лежат калькулятор, workbook и диагностические карты</h2>
+            <p class="hero-text">
+              Здесь книга читается не отдельно от практики. Слева оглавление и быстрые переходы по главам, рядом
+              инструменты, которые помогают сразу проверить свой маркетинг, посчитать допустимый CAC и собрать рабочий
+              контур внедрения.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#book-content">Начать чтение</a>
+              <a class="button secondary" href="./book.html">Открыть навигатор по книге</a>
+            </div>
+          </section>
+          <aside class="hero-panel">
+            <p class="panel-title">Рядом с чтением</p>
+            <ul class="feature-list">
+              <li>Оглавление по введению, главам и заключению</li>
+              <li>Переходы к тесту зрелости и CAC-калькулятору</li>
+              <li>Быстрый вход в workbook и маршруты чтения</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container reader-layout">
+        <aside class="reader-sidebar">
+          <div class="card reader-stack">
+            <div>
+              <p class="section-label">Оглавление</p>
+              <h3>Структура книги</h3>
+            </div>
+            <nav class="toc-list" id="reader-toc">
+              <p class="reader-status">Собираю оглавление…</p>
+            </nav>
+          </div>
+
+          <div class="card reader-stack">
+            <div>
+              <p class="section-label">Инструменты</p>
+              <h3>Использовать сразу</h3>
+            </div>
+            <div class="tool-grid">
+              <a class="tool-card" href="./index.html#test">
+                <strong>Тест зрелости</strong>
+                <span>Понять, на каком уровне сейчас живет ваш performance.</span>
+              </a>
+              <a class="tool-card" href="./index.html#calculator">
+                <strong>CAC-калькулятор</strong>
+                <span>Проверить рабочий и предельный CAC прямо по своей модели.</span>
+              </a>
+              <a class="tool-card" href="./workbook.html">
+                <strong>Workbook</strong>
+                <span>Превратить идеи из книги в чек-лист изменений по системе.</span>
+              </a>
+              <a class="tool-card" href="./routes.html">
+                <strong>Маршруты чтения</strong>
+                <span>Зайти в книгу под роль, задачу или конкретную проблему.</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <article class="card reader-card">
+          <div id="reader-status" class="reader-status">Загружаю рукопись…</div>
+          <div id="book-content" class="book-content"></div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="eyebrow">Perf Book Lab</p>
+          <p>Теперь книга живет внутри той же системы, что и калькуляторы, карты и workbook, а не отдельно от них.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Главная</a>
+          <a href="./book.html">Навигатор</a>
+          <a href="./workbook.html">Workbook</a>
+          <a href="./routes.html">Маршруты</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./reader.js"></script>
+  </body>
+</html>

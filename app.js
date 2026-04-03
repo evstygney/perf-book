@@ -1,5 +1,5 @@
 const { testQuestions, testResults, stages, workbookSections, readingPaths } = window.PerfBookData;
-const { currency, percent, copyText, loadWorkbookState, saveWorkbookState, workbookProgress } = window.PerfBookShared;
+const { currency, percent, copyText, loadWorkbookState, saveWorkbookState, workbookProgress, routeMarkup } = window.PerfBookShared;
 
 function initTest() {
   const root = document.getElementById("test-app");
@@ -40,9 +40,10 @@ function initTest() {
         <span class="result-level">${result.level}</span>
         <h4>${result.title}</h4>
         <p>${result.description}</p>
-        <div><strong>Что читать в первую очередь:</strong><p>${result.route.join(" → ")}</p></div>
+        <div><strong>Что читать в первую очередь:</strong>${routeMarkup(result.route)}</div>
         <div><strong>Что делать дальше:</strong><ul>${result.advice.map((item) => `<li>${item}</li>`).join("")}</ul></div>
         <div class="result-actions">
+          <a class="button secondary small" href="./reader.html">Читать книгу</a>
           <a class="button primary small" href="#calculator">Открыть CAC-калькулятор</a>
           <button class="button secondary small" id="copy-test-result">Скопировать результат</button>
           <button class="button secondary small" id="restart-test">Пройти заново</button>
@@ -233,7 +234,7 @@ function initReadingPaths() {
         <article class="path-card">
           <h4>${path.title}</h4>
           <p>${path.text}</p>
-          <ol>${path.route.map((item) => `<li>${item}</li>`).join("")}</ol>
+          ${routeMarkup(path.route)}
         </article>
       `,
     )

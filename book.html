@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Навигатор по книге | Perf Book Lab</title>
+    <meta name="description" content="Навигатор по главам книги, downloadable assets и быстрый вход в нужный раздел." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">PB</span>
+            <div>
+              <p class="eyebrow">Perf Book Lab</p>
+              <h1>Навигатор по книге</h1>
+            </div>
+          </div>
+          <div class="topbar-links">
+            <a href="./index.html">Главная</a>
+            <a href="./workbook.html">Workbook</a>
+            <a href="./routes.html">Маршруты</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="kicker">Структура книги</p>
+            <h2>Быстрый вход в нужную часть без линейного чтения</h2>
+            <p class="hero-text">
+              Эта страница нужна для тех, кто хочет заходить в книгу по задаче:
+              механика рекламы, медийка, CAC, architecture performance, управление
+              или пределы роста.
+            </p>
+          </section>
+          <aside class="hero-panel">
+            <p class="panel-title">Дополнительно</p>
+            <ul class="feature-list">
+              <li>Навигация по главам</li>
+              <li>Смысл каждой части</li>
+              <li>Скачиваемые шаблоны и шпаргалки</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Оглавление</p>
+              <h3>Карта книги</h3>
+            </div>
+            <p class="section-note">Сначала механика рынка, потом медийка, затем экономика и только после этого performance как система.</p>
+          </div>
+          <div class="reading-grid" id="chapter-nav"></div>
+        </div>
+      </section>
+
+      <section class="section section-accent">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Assets</p>
+              <h3>Скачать и переслать</h3>
+            </div>
+            <p class="section-note">Это легкие артефакты вокруг книги, которые можно использовать отдельно от полного текста.</p>
+          </div>
+          <div class="reading-grid" id="asset-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="eyebrow">Perf Book Lab</p>
+          <p>Страница навигатора нужна, чтобы книгу можно было использовать как систему, а не только как линейный текст.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Главная</a>
+          <a href="./workbook.html">Workbook</a>
+          <a href="./routes.html">Маршруты</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./book.js"></script>
+  </body>
+</html>

@@ -14,12 +14,14 @@
 ## Структура
 
 - `index.html` — хаб и основные интерактивные модули;
+- `book.html` — навигатор по книге и downloadable assets;
 - `workbook.html` — отдельная workbook-страница;
 - `routes.html` — маршруты чтения и сценарии;
 - `styles.css` — общие стили;
 - `data.js` — общий слой данных;
 - `shared.js` — общие форматтеры и утилиты;
 - `app.js`, `workbook.js`, `routes.js` — логика страниц.
+- `book.js` — логика страницы книги и assets.
 
 ## Как включить GitHub Pages
 

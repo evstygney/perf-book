@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Маршруты чтения | Perf Book Lab</title>
+    <meta name="description" content="Маршруты чтения книги по ролям и проблемам бизнеса." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">PB</span>
+            <div>
+              <p class="eyebrow">Perf Book Lab</p>
+              <h1>Маршруты чтения</h1>
+            </div>
+          </div>
+          <div class="topbar-links">
+            <a href="./index.html">Главная</a>
+            <a href="./workbook.html">Workbook</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="kicker">Навигация по книге</p>
+            <h2>Подберите маршрут под роль, боль и стадию бизнеса</h2>
+            <p class="hero-text">
+              Не всем нужно читать книгу одинаково. Здесь можно быстро выбрать
+              сценарий: собственник, маркетолог, продажи, перегретый search,
+              дорогой лид, системный хаос.
+            </p>
+          </section>
+          <aside class="hero-panel">
+            <p class="panel-title">Что внутри</p>
+            <ul class="feature-list">
+              <li>Готовые маршруты чтения</li>
+              <li>Сценарии по ролям и проблемам</li>
+              <li>Копирование маршрута в буфер</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Маршруты</p>
+              <h3>Базовые траектории</h3>
+            </div>
+          </div>
+          <div class="reading-grid" id="routes-reading-paths"></div>
+        </div>
+      </section>
+
+      <section class="section section-accent">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Сценарии</p>
+              <h3>Если у вас конкретная проблема</h3>
+            </div>
+            <p class="section-note">Выберите карточку и получите быстрый маршрут с кратким диагнозом.</p>
+          </div>
+          <div class="reading-grid" id="scenario-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="eyebrow">Perf Book Lab</p>
+          <p>Маршруты чтения нужны, чтобы книга вела к действию, а не растворялась в ровном чтении от первой до последней страницы.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Главная</a>
+          <a href="./workbook.html">Workbook</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./data.js"></script>
+    <script src="./shared.js"></script>
+    <script src="./routes.js"></script>
+  </body>
+</html>

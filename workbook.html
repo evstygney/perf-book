@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workbook | Perf Book Lab</title>
+    <meta name="description" content="Полный workbook по книге «Перформанс-маркетинг для начинающих»: чек-листы, прогресс и экспорт." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">PB</span>
+            <div>
+              <p class="eyebrow">Perf Book Lab</p>
+              <h1>Workbook</h1>
+            </div>
+          </div>
+          <div class="topbar-links">
+            <a href="./index.html">Главная</a>
+            <a href="./routes.html">Маршруты</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="kicker">Применение книги</p>
+            <h2>Рабочий контур для внедрения performance-мышления</h2>
+            <p class="hero-text">
+              Это не просто список галочек. Workbook помогает увидеть, где ваша система
+              уже собрана, а где marketing math еще живет на ощущениях, красивых отчетах
+              и слабых сигналах.
+            </p>
+          </section>
+          <aside class="hero-panel">
+            <p class="panel-title">Что можно сделать</p>
+            <ul class="feature-list">
+              <li>Отметить состояние системы</li>
+              <li>Посмотреть общий прогресс</li>
+              <li>Экспортировать чек-лист</li>
+              <li>Получить следующий шаг</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container workbook-grid">
+        <div class="card">
+          <h3>Чек-листы внедрения</h3>
+          <div id="full-workbook-app"></div>
+        </div>
+        <div class="card">
+          <h3>Сводка</h3>
+          <div id="full-workbook-summary"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="eyebrow">Perf Book Lab</p>
+          <p>Workbook хранит прогресс локально в браузере. Можно экспортировать его в текст и переслать команде.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Главная</a>
+          <a href="./routes.html">Маршруты</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./data.js"></script>
+    <script src="./shared.js"></script>
+    <script src="./workbook.js"></script>
+  </body>
+</html>

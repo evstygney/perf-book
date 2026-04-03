@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perf Book Lab</title>
+    <meta
+      name="description"
+      content="Интерактивная экосистема вокруг книги «Перформанс-маркетинг для начинающих»: тест зрелости, CAC-калькулятор, карта сбоев и workbook."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">PB</span>
+            <div>
+              <p class="eyebrow">Perf Book Lab</p>
+              <h1>Экосистема вокруг книги</h1>
+            </div>
+          </div>
+          <div class="topbar-links">
+            <a href="#test">Тест</a>
+            <a href="#calculator">CAC</a>
+            <a href="#map">Карта сбоев</a>
+            <a href="#workbook">Workbook</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="kicker">Перформанс-маркетинг для начинающих</p>
+            <h2>Не просто книга, а рабочая система диагностики и внедрения</h2>
+            <p class="hero-text">
+              Здесь собраны интерактивные инструменты, которые помогают не просто
+              прочитать книгу, а применить ее на своем бизнесе: понять уровень зрелости
+              маркетинга, посчитать допустимый CAC, найти точку поломки в системе и
+              собрать рабочий контур performance.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#test">Пройти тест зрелости</a>
+              <a class="button secondary" href="#calculator">Открыть CAC-калькулятор</a>
+            </div>
+          </section>
+
+          <aside class="hero-panel">
+            <p class="panel-title">Что внутри</p>
+            <ul class="feature-list">
+              <li>Тест зрелости performance-маркетинга</li>
+              <li>Интерактивный CAC-калькулятор</li>
+              <li>Карта сбоев performance-системы</li>
+              <li>Workbook с шаблонами и чек-листами</li>
+              <li>Маршрут чтения книги под ситуацию бизнеса</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="test">
+        <div class="container section-grid">
+          <div class="section-copy">
+            <p class="section-label">Диагностика</p>
+            <h3>Тест зрелости performance-маркетинга</h3>
+            <p>
+              Тест быстро покажет, на каком уровне сейчас находится ваш маркетинг:
+              на уровне кабинета, на уровне тактики, на уровне системы или уже на
+              уровне управляемого роста.
+            </p>
+          </div>
+
+          <div class="card card-large">
+            <div id="test-app"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-accent" id="calculator">
+        <div class="container section-grid">
+          <div class="section-copy">
+            <p class="section-label">Экономика</p>
+            <h3>CAC-калькулятор</h3>
+            <p>
+              Посчитайте рабочий и предельный CAC исходя из своей модели, а не из
+              психологически комфортной цифры. Калькулятор специально сделан простым,
+              чтобы им могли пользоваться и собственники, и маркетологи.
+            </p>
+          </div>
+
+          <div class="card card-large">
+            <div id="cac-app"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="map">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Диагностическая карта</p>
+              <h3>Где ломается performance-система</h3>
+            </div>
+            <p class="section-note">
+              Выберите участок воронки и посмотрите типовые поломки, симптомы и вопросы,
+              которые нужно задать до того, как сжигать бюджет.
+            </p>
+          </div>
+
+          <div class="map-layout">
+            <div class="stage-list" id="stage-list"></div>
+            <div class="card map-card" id="stage-detail"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-accent" id="workbook">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Применение</p>
+              <h3>Workbook</h3>
+            </div>
+            <p class="section-note">
+              Отметьте то, что уже есть в вашем маркетинге. Сайт сохранит прогресс в браузере.
+            </p>
+          </div>
+
+          <div class="workbook-grid">
+            <div class="card">
+              <h4>Чек-листы</h4>
+              <div id="workbook-app"></div>
+            </div>
+            <div class="card">
+              <h4>Что делать дальше</h4>
+              <div id="next-steps"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reading-path">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label">Маршрут</p>
+              <h3>Путь чтения книги</h3>
+            </div>
+            <p class="section-note">
+              Разные роли и проблемы требуют разного входа в книгу. Здесь можно быстро
+              выбрать свой маршрут.
+            </p>
+          </div>
+          <div class="reading-grid" id="reading-paths"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="eyebrow">Perf Book Lab</p>
+          <p>
+            Статическая GitHub Pages-версия интерактивной экосистемы вокруг книги
+            «Перформанс-маркетинг для начинающих».
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#test">Тест</a>
+          <a href="#calculator">CAC</a>
+          <a href="#map">Карта</a>
+          <a href="#workbook">Workbook</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
